@@ -1,0 +1,8 @@
+body { width: 270px; margin: 0; padding: 22px; font: 14px/1.6 system-ui, sans-serif; color: #1f2937; background: #fff; }
+h1 { margin: 0; font-size: 21px; }
+p { margin: 8px 0 18px; color: #64748b; }
+label { display: flex; align-items: center; justify-content: space-between; padding: 14px; background: #f1f5f9; border-radius: 10px; font-weight: 600; }
+input { width: 20px; height: 20px; accent-color: #0087ac; cursor: pointer; }
+input:focus-visible { outline: 2px solid #0087ac; outline-offset: 3px; }
+#status { margin: 12px 0; color: #0087ac; }
+small { display: block; color: #64748b; }
