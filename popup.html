@@ -3,15 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>关闭自动连播</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h1>播完，就停下来</h1>
-  <p>哔哩哔哩自动连播控制</p>
-  <label><span>屏蔽自动连播</span><input id="enabled" type="checkbox" disabled></label>
-  <p id="status" role="status">正在读取设置…</p>
-  <small>可手动播放下一集或点击推荐视频。首次安装后，请刷新已打开的视频页面。</small>
+  <header>
+    <h1>关闭自动连播</h1>
+    <p class="subtitle">哔哩哔哩</p>
+  </header>
+  <main>
+    <label class="setting" for="enabled">
+      <span>屏蔽自动连播</span>
+      <span class="switch">
+        <input id="enabled" type="checkbox" role="switch" disabled>
+        <span class="track" aria-hidden="true"></span>
+      </span>
+    </label>
+    <p id="status" role="status">正在读取设置…</p>
+  </main>
+  <footer>仍可手动切换视频。首次安装后，请刷新视频页面。</footer>
   <script src="popup.js"></script>
 </body>
 </html>
